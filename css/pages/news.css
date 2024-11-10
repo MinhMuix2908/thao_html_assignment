@@ -1,0 +1,150 @@
+/* News Page Styles */
+
+/* Hero Banner */
+.news-hero {
+    margin-top: 56px; /* Navbar height */
+}
+
+.horizontal-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.horizontal-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+/* News Categories */
+#newsTab .nav-link {
+    color: #6c757d;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#newsTab .nav-link.active {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+/* News Cards */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Badges */
+.badge {
+    padding: 0.5em 1em;
+    font-weight: 500;
+}
+
+/* Pagination */
+.pagination .page-link {
+    border-radius: 20px;
+    margin: 0 3px;
+    border: none;
+    color: var(--bs-primary);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+/* Newsletter Section */
+.input-group {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.input-group .form-control {
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.input-group .btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .horizontal-banner {
+        height: 200px;
+    }
+
+    #newsTab .nav-link {
+        padding: 0.4rem 1rem;
+        margin: 0 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Newsletter Form Styles */
+#newsletterForm .input-group {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#newsletterForm .form-control {
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+#newsletterForm .btn {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-header {
+    padding-bottom: 0;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.btn-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.modal .bi-check-circle-fill {
+    color: #198754;
+}

@@ -1,0 +1,79 @@
+/* Service Detail Styles */
+
+/* Hero Section */
+.service-hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), 
+                url('../../assets/images/services/hero-bg.jpg') center/cover;
+}
+
+/* Feature Cards */
+.feature-card {
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Process Timeline */
+.process-timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.process-step {
+    position: relative;
+}
+
+.process-icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .process-icon {
+    transform: scale(1.1);
+}
+
+/* Stats Card */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .service-hero {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .service-hero img {
+        margin-top: 2rem;
+    }
+
+    .process-step {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,143 @@
+/* css/pages/about.css */
+
+/* Hero Section Styles */
+.about-hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), 
+                url('../../assets/images/hero-bg.jpg') center/cover;
+}
+
+/* Video Container */
+.ratio {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Audio Player Styling */
+.audio-player {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    border-radius: 30px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    background: #dee2e6;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-nodes {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-nodes:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-image {
+    position: relative;
+    z-index: 100;
+}
+
+.timeline-image i {
+    background: white;
+    padding: 5px;
+    color: var(--bs-primary);
+    border: 2px solid var(--bs-primary);
+    border-radius: 50%;
+}
+
+.timeline-content {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-date time {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Leadership Team Styles */
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.team-social {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover .team-social {
+    bottom: 20px;
+    opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-content {
+        max-width: 100%;
+        margin-left: 55px;
+    }
+    
+    .timeline-date {
+        margin-left: 55px;
+    }
+
+    .about-hero {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .team-card img {
+        height: 250px;
+    }
+}
