@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VTI Việt Nam - Công nghệ số cho doanh nghiệp</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo/favicon.ico">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <!-- Common CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <!-- Page Specific CSS -->
+        <link rel="stylesheet" href="/css/news.css">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/images/logo/logo.png" alt="Logo VTI" height="30" class="d-inline-block align-text-top">
+                VTI Việt Nam
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Dự án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service-detail.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tuyendung.vti.com.vn/?_gl=1*12mfeth*_gcl_au*MTAwNTI5NTI2MS4xNzMxMjQwODky*_ga*MTM2OTEwNDE4Ni4xNzMxMjQwODkx*_ga_LQPRTTM5TD*MTczMTI0NjA5NS4yLjEuMTczMTI0NjA5Ni41OS4wLjA.*_ga_QS5NL7CHN1*MTczMTI0NjA5NS4yLjEuMTczMTI0NjA5Ni4wLjAuMA..">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/vti.com.vn" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Hero Section -->
+    <section class="project-hero bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Dự án tiêu biểu</h1>
+                    <p class="lead">Các dự án VTI đã triển khai thành công</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project-stats bg-white bg-opacity-10 rounded p-4">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <h3 class="fw-bold">500+</h3>
+                                <p class="mb-0">Dự án</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold">200+</h3>
+                                <p class="mb-0">Khách hàng</p>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold">98%</h3>
+                                <p class="mb-0">Hài lòng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Table Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Dự án theo ngành</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered project-table">
+                    <thead class="table-primary">
+                        <tr>
+                            <th rowspan="2" class="align-middle text-center">Ngành</th>
+                            <th colspan="3" class="text-center">Loại dự án</th>
+                            <th rowspan="2" class="align-middle text-center">Tổng số dự án</th>
+                            <th rowspan="2" class="align-middle text-center">Khách hàng tiêu biểu</th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">CRM</th>
+                            <th class="text-center">Cloud</th>
+                            <th class="text-center">AI/ML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tài chính - Ngân hàng</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center fw-bold">35</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li>Ngân hàng ABC</li>
+                                    <li>Công ty Tài chính XYZ</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bán lẻ</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center">5</td>
+                            <td class="text-center fw-bold">35</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li>Siêu thị DEF</li>
+                                    <li>Chuỗi cửa hàng GHI</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sản xuất</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center fw-bold">35</td>
+                            <td>
+                                <ul class="list-unstyled mb-0">
+                                    <li>Công ty JKL</li>
+                                    <li>Tập đoàn MNO</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td class="fw-bold">Tổng</td>
+                            <td class="text-center fw-bold">45</td>
+                            <td class="text-center fw-bold">37</td>
+                            <td class="text-center fw-bold">23</td>
+                            <td class="text-center fw-bold">105</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Lists Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Sorted List -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-4">Top 10 dự án theo quy mô</h3>
+                            <ol class="project-list">
+                                <li>
+                                    <h5>Chuyển đổi số Ngân hàng ABC</h5>
+                                    <p class="text-muted mb-0">Triển khai Salesforce & Cloud Migration</p>
+                                </li>
+                                <li>
+                                    <h5>Hệ thống AI cho Tập đoàn XYZ</h5>
+                                    <p class="text-muted mb-0">Machine Learning & Data Analytics</p>
+                                </li>
+                                <li>
+                                    <h5>Platform Thương mại điện tử DEF</h5>
+                                    <p class="text-muted mb-0">Cloud Infrastructure & DevOps</p>
+                                </li>
+                                <li>
+                                    <h5>CRM cho Chuỗi bán lẻ GHI</h5>
+                                    <p class="text-muted mb-0">Salesforce Implementation</p>
+                                </li>
+                                <li>
+                                    <h5>Smart Factory cho JKL</h5>
+                                    <p class="text-muted mb-0">IoT & AI Solutions</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unsorted List -->
+                <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold mb-4">Dự án đang triển khai</h3>
+                            <ul class="project-list-unstyled">
+                                <li>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-warning me-2">Đang triển khai</span>
+                                        <h5 class="mb-0">Cloud Migration MNO Corp</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q2/2024</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-warning me-2">Đang triển khai</span>
+                                        <h5 class="mb-0">AI Analytics PQR Group</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q3/2024</p>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="badge bg-info me-2">Mới bắt đầu</span>
+                                        <h5 class="mb-0">ServiceNow STU Bank</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q4/2024</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Status Overview Table -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Tổng quan trạng thái dự án</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered status-table">
+                    <thead class="table-success">
+                        <tr>
+                            <th rowspan="2" class="align-middle text-center">Loại dự án</th>
+                            <th colspan="4" class="text-center">Trạng thái</th>
+                            <th rowspan="2" class="align-middle text-center">Tổng</th>
+                        </tr>
+                        <tr>
+                            <th class="text-center">Hoàn thành</th>
+                            <th class="text-center">Đang triển khai</th>
+                            <th class="text-center">Tạm dừng</th>
+                            <th class="text-center">Mới bắt đầu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salesforce Implementation</td>
+                            <td class="text-center">45</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">2</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center fw-bold">70</td>
+                        </tr>
+                        <tr>
+                            <td>ServiceNow Development</td>
+                            <td class="text-center">35</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">1</td>
+                            <td class="text-center">7</td>
+                            <td class="text-center fw-bold">55</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Migration</td>
+                            <td class="text-center">50</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center fw-bold">85</td>
+                        </tr>
+                        <tr>
+                            <td>AI Solutions</td>
+                            <td class="text-center">25</td>
+                            <td class="text-center">18</td>
+                            <td class="text-center">2</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center fw-bold">60</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td class="fw-bold">Tổng</td>
+                            <td class="text-center fw-bold">155</td>
+                            <td class="text-center fw-bold">65</td>
+                            <td class="text-center fw-bold">8</td>
+                            <td class="text-center fw-bold">42</td>
+                            <td class="text-center fw-bold">270</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline Table -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Lịch trình dự án 2024</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered timeline-table">
+                    <thead class="table-info">
+                        <tr>
+                            <th rowspan="2" class="align-middle">Tên dự án</th>
+                            <th rowspan="2" class="align-middle">Khách hàng</th>
+                            <th colspan="3" class="text-center">Q1</th>
+                            <th colspan="3" class="text-center">Q2</th>
+                            <th colspan="3" class="text-center">Q3</th>
+                            <th colspan="3" class="text-center">Q4</th>
+                        </tr>
+                        <tr>
+                            <th>T1</th><th>T2</th><th>T3</th><th>T4</th>
+                            <th>T5</th><th>T6</th><th>T7</th><th>T8</th>
+                            <th>T9</th><th>T10</th><th>T11</th><th>T12</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CRM Transformation</td>
+                            <td>Ngân hàng ABC</td>
+                            <td colspan="6" class="table-primary text-center">Phase 1</td>
+                            <td colspan="6" class="table-success text-center">Phase 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Migration</td>
+                            <td>Công ty XYZ</td>
+                            <td colspan="4" class="table-warning text-center">Planning</td>
+                            <td colspan="8" class="table-primary text-center">Implementation</td>
+                        </tr>
+                        <tr>
+                            <td>AI Analytics Platform</td>
+                            <td>Tập đoàn DEF</td>
+                            <td colspan="3" class="table-secondary text-center">Research</td>
+                            <td colspan="5" class="table-primary text-center">Development</td>
+                            <td colspan="4" class="table-success text-center">Testing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Project Distribution -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Phân bố dự án theo khu vực</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered region-table">
+                    <thead class="table-warning">
+                        <tr>
+                            <th rowspan="3" class="align-middle text-center">Khu vực</th>
+                            <th colspan="9" class="text-center">Loại dự án</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="text-center">Enterprise</th>
+                            <th colspan="3" class="text-center">SME</th>
+                            <th colspan="3" class="text-center">Startup</th>
+                        </tr>
+                        <tr>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Miền Bắc</td>
+                            <td class="text-center">25</td>
+                            <td class="text-center">30</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">25</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center">5</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">3</td>
+                        </tr>
+                        <tr>
+                            <td>Miền Trung</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center">15</td>
+                            <td class="text-center">18</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">3</td>
+                            <td class="text-center">5</td>
+                            <td class="text-center">2</td>
+                        </tr>
+                        <tr>
+                            <td>Miền Nam</td>
+                            <td class="text-center">30</td>
+                            <td class="text-center">35</td>
+                            <td class="text-center">20</td>
+                            <td class="text-center">25</td>
+                            <td class="text-center">28</td>
+                            <td class="text-center">12</td>
+                            <td class="text-center">8</td>
+                            <td class="text-center">10</td>
+                            <td class="text-center">5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-warning">
+                        <tr>
+                            <td class="fw-bold">Tổng</td>
+                            <td class="text-center fw-bold">70</td>
+                            <td class="text-center fw-bold">85</td>
+                            <td class="text-center fw-bold">45</td>
+                            <td class="text-center fw-bold">60</td>
+                            <td class="text-center fw-bold">71</td>
+                            <td class="text-center fw-bold">30</td>
+                            <td class="text-center fw-bold">16</td>
+                            <td class="text-center fw-bold">23</td>
+                            <td class="text-center fw-bold">10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>VTI Việt Nam</h5>
+                    <p>Mang công nghệ Việt vươn ra quốc tế</p>
+                    <p class="mb-0">
+                        <i class="bi bi-geo-alt-fill me-2"></i>Tầng 15, Tòa nhà ABC, Quận Cầu Giấy, Hà Nội
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-telephone-fill me-2"></i>(024) 1234 5678
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about.html" class="text-white">Về chúng tôi</a></li>
+                        <li><a href="/pages/services.html" class="text-white">Dịch vụ</a></li>
+                        <li><a href="/news.html" class="text-white">Tin tức</a></li>
+                        <li><a href="/pages/register.html" class="text-white">Đăng ký tư vấn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vti.com.vn" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/vtijsc" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 VTI Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức - VTI Việt Nam</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/news2.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="navbar-brand">
+                <img src="/assets/images/logo/logo.png" alt="VTI Logo" width="80" height="30">
+                <span>VTI Việt Nam</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="/news.html" class="nav-link">Tin tức</a></li>
+                <li class="nav-item"><a href="/projects.html" class="nav-link">Dự án</a></li>
+                <li class="nav-item"><a href="/services.html" class="nav-link">Dịch vụ</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-banner">
+            <img src="/assets/images/banners/news-banner.jpg" alt="VTI News" width="1920" height="600">
+            <div class="hero-content">
+                <div class="container">
+                    <h1>Tin tức & Sự kiện</h1>
+                    <p>Cập nhật thông tin mới nhất về công nghệ và hoạt động của VTI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-grid">
+                <article class="featured-main">
+                    <div class="news-card large">
+                        <div class="card-grid">
+                            <div class="card-image">
+                                <img src="/assets/images/news/featured-1.jpg" alt="Featured News" width="600" height="400">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-meta">
+                                    <span class="badge primary">Công nghệ</span>
+                                    <time>10/11/2024</time>
+                                </div>
+                                <h2>VTI ra mắt giải pháp AI mới cho doanh nghiệp</h2>
+                                <p>VTI vừa công bố giải pháp trí tuệ nhân tạo mới, giúp doanh nghiệp tối ưu hóa quy trình vận hành và tăng năng suất làm việc.</p>
+                                <a href="news-detail.html" class="button primary">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="featured-side">
+                    <div class="news-card">
+                        <img src="/assets/images/news/featured-2.jpg" alt="News" width="400" height="250">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge success">Doanh nghiệp</span>
+                                <time>09/11/2024</time>
+                            </div>
+                            <h3>VTI mở rộng thị trường Đông Nam Á</h3>
+                            <p>Công ty tiếp tục mở rộng hoạt động tại thị trường Đông Nam Á với văn phòng mới tại Singapore.</p>
+                            <a href="news-detail.html" class="button outline">Xem thêm</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <!-- Tech News -->
+            <div class="category-section">
+                <h2>Tin tức công nghệ</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="/assets/images/news/tech-1.jpg" alt="Tech News" width="400" height="250">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge primary">Công nghệ</span>
+                                <time>08/11/2024</time>
+                            </div>
+                            <h3>Xu hướng AI trong năm 2024</h3>
+                            <p>Khám phá những xu hướng AI mới nhất đang định hình tương lai công nghệ.</p>
+                            <a href="news-detail.html" class="read-more">Đọc tiếp</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="/assets/images/news/tech-2.jpg" alt="Tech News" width="400" height="250">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge primary">Công nghệ</span>
+                                <time>07/11/2024</time>
+                            </div>
+                            <h3>Cloud Computing và bảo mật</h3>
+                            <p>Giải pháp bảo mật mới cho doanh nghiệp trong thời đại điện toán đám mây.</p>
+                            <a href="news-detail.html" class="read-more">Đọc tiếp</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Company News -->
+            <div class="category-section">
+                <h2>Tin tức doanh nghiệp</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="/assets/images/news/company-1.jpg" alt="Company News" width="400" height="250">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge success">Doanh nghiệp</span>
+                                <time>06/11/2024</time>
+                            </div>
+                            <h3>VTI đạt chứng nhận ISO 27001</h3>
+                            <p>Chứng nhận quản lý an toàn thông tin theo tiêu chuẩn quốc tế.</p>
+                            <a href="news-detail.html" class="read-more">Đọc tiếp</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Events -->
+            <div class="category-section">
+                <h2>Sự kiện</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="/assets/images/news/event-1.jpg" alt="Event" width="400" height="250">
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="badge info">Sự kiện</span>
+                                <time>12/11/2024</time>
+                            </div>
+                            <h3>Workshop: Digital Transformation 2024</h3>
+                            <p>Hội thảo chia sẻ kinh nghiệm chuyển đổi số cho doanh nghiệp.</p>
+                            <a href="news-detail.html" class="read-more">Đọc tiếp</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Đăng ký nhận tin</h2>
+                <p>Cập nhật thông tin mới nhất về công nghệ và hoạt động của VTI</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Nhập email của bạn" required>
+                        <button type="button" class="button primary" onclick="showSubscriptionModal()">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="subscriptionModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <i class="bi bi-check-circle-fill"></i>
+                <h4>Đăng ký thành công!</h4>
+                <p>Cảm ơn bạn đã đăng ký nhận bản tin từ VTI.</p>
+                <button class="button primary" onclick="closeModal()">Đóng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h5>VTI Việt Nam</h5>
+                    <p>Mang công nghệ Việt vươn ra quốc tế</p>
+                    <p class="contact-info">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Tầng 15, Tòa nhà ABC, Quận Cầu Giấy, Hà Nội</span>
+                    </p>
+                    <p class="contact-info">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>(024) 1234 5678</span>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Về chúng tôi</a></li>
+                        <li><a href="/services.html">Dịch vụ</a></li>
+                        <li><a href="/projects.html">Dự án</a></li>
+                        <li><a href="/news.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="https://facebook.com/vti" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/vti" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/vti" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VTI Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

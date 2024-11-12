@@ -1,0 +1,115 @@
+/* Projects Page Styles */
+
+/* Hero Section */
+.project-hero {
+    background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)),
+                url('../../assets/images/projects/hero-bg.jpg') center/cover;
+}
+
+.project-stats {
+    backdrop-filter: blur(10px);
+}
+
+/* Table Styles */
+.project-table {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.project-table th {
+    background-color: var(--bs-primary);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-table td {
+    vertical-align: middle;
+}
+
+.project-table [rowspan] {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+.project-table [colspan] {
+    background-color: var(--bs-primary);
+    color: white;
+}
+
+/* Sorted List Styles */
+.project-list {
+    counter-reset: project-counter;
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    counter-increment: project-counter;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+.project-list li::before {
+    content: counter(project-counter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Unsorted List Styles */
+.project-list-unstyled {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list-unstyled li {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.project-list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-hero {
+        text-align: center;
+    }
+    
+    .project-stats {
+        margin-top: 2rem;
+    }
+    
+    .project-table {
+        font-size: 0.875rem;
+    }
+    
+    .project-list li {
+        padding-left: 2.5rem;
+    }
+}

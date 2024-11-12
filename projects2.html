@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dự án - VTI Việt Nam</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo/favicon.ico">
+    
+    <!-- ... other meta tags ... -->
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/projects2.css">
+    
+    <!-- Icons (you can use your own icon font or SVG icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="navbar-brand">
+                <img src="/assets/images/logo/logo.png" alt="VTI Logo">
+                <span>VTI Việt Nam</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="/index.html" class="nav-link">Trang chủ</a></li>
+                <li class="nav-item"><a href="/about.html" class="nav-link">Giới thiệu</a></li>
+                <li class="nav-item"><a href="/news.html" class="nav-link">Tin tức</a></li>
+                <li class="nav-item"><a href="/projects.html" class="nav-link">Dự án</a></li>
+                <li class="nav-item"><a href="/services.html" class="nav-link">Dịch vụ</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h1>Dự án tiêu biểu</h1>
+                    <p class="lead">Các dự án VTI đã triển khai thành công</p>
+                </div>
+                <div class="col-6">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Dự án</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>200+</h3>
+                            <p>Khách hàng</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p>Hài lòng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Dự án theo ngành</h2>
+            <div class="table-wrapper">
+                <table class="table custom-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Ngành</th>
+                            <th colspan="3">Loại dự án</th>
+                            <th rowspan="2">Tổng số dự án</th>
+                            <th rowspan="2">Khách hàng tiêu biểu</th>
+                        </tr>
+                        <tr>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI/ML</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tài chính - Ngân hàng</td>
+                            <td>15</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>35</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li>Ngân hàng BIDV</li>
+                                    <li>Ngân hàng VPBank</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bán lẻ</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>35</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li>Vinmart</li>
+                                    <li>FPT Retail</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sản xuất</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>35</td>
+                            <td>
+                                <ul class="list-unstyled">
+                                    <li>Vinamilk</li>
+                                    <li>Masan Group</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="total-row">
+                            <td>Tổng</td>
+                            <td>45</td>
+                            <td>37</td>
+                            <td>23</td>
+                            <td>105</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Top 10 dự án theo quy mô</h3>
+                            <ol class="numbered-list">
+                                <li>
+                                    <h5>Digital Transformation - BIDV</h5>
+                                    <p class="text-muted">Chuyển đổi số toàn diện hệ thống ngân hàng</p>
+                                </li>
+                                <li>
+                                    <h5>AI Analytics Platform - Vinamilk</h5>
+                                    <p class="text-muted">Nền tảng phân tích dữ liệu thông minh</p>
+                                </li>
+                                <li>
+                                    <h5>Cloud Migration - FPT Retail</h5>
+                                    <p class="text-muted">Chuyển đổi hạ tầng lên AWS Cloud</p>
+                                </li>
+                                <li>
+                                    <h5>CRM Implementation - MWG</h5>
+                                    <p class="text-muted">Triển khai Salesforce cho chuỗi bán lẻ</p>
+                                </li>
+                                <li>
+                                    <h5>Smart Factory - Masan</h5>
+                                    <p class="text-muted">Số hóa nhà máy sản xuất</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Dự án đang triển khai</h3>
+                            <ul class="status-list">
+                                <li>
+                                    <div class="project-header">
+                                        <span class="status-badge warning">Đang triển khai</span>
+                                        <h5>VPBank Digital Banking Platform</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q2/2024</p>
+                                </li>
+                                <li>
+                                    <div class="project-header">
+                                        <span class="status-badge warning">Đang triển khai</span>
+                                        <h5>Vinmart Analytics System</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q3/2024</p>
+                                </li>
+                                <li>
+                                    <div class="project-header">
+                                        <span class="status-badge info">Mới bắt đầu</span>
+                                        <h5>BIDV Cloud Migration</h5>
+                                    </div>
+                                    <p class="text-muted">Dự kiến hoàn thành: Q4/2024</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Status Overview Table -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Tổng quan trạng thái dự án</h2>
+            <div class="table-wrapper">
+                <table class="table status-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Loại dự án</th>
+                            <th colspan="4">Trạng thái</th>
+                            <th rowspan="2">Tổng</th>
+                        </tr>
+                        <tr>
+                            <th>Hoàn thành</th>
+                            <th>Đang triển khai</th>
+                            <th>Tạm dừng</th>
+                            <th>Mới bắt đầu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salesforce Implementation</td>
+                            <td>45</td>
+                            <td>15</td>
+                            <td>2</td>
+                            <td>8</td>
+                            <td class="fw-bold">70</td>
+                        </tr>
+                        <tr>
+                            <td>ServiceNow Development</td>
+                            <td>35</td>
+                            <td>12</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td class="fw-bold">55</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Migration</td>
+                            <td>50</td>
+                            <td>20</td>
+                            <td>3</td>
+                            <td>12</td>
+                            <td class="fw-bold">85</td>
+                        </tr>
+                        <tr>
+                            <td>AI Solutions</td>
+                            <td>25</td>
+                            <td>18</td>
+                            <td>2</td>
+                            <td>15</td>
+                            <td class="fw-bold">60</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>Tổng</td>
+                            <td class="fw-bold">155</td>
+                            <td class="fw-bold">65</td>
+                            <td class="fw-bold">8</td>
+                            <td class="fw-bold">42</td>
+                            <td class="fw-bold">270</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Timeline Table -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Lịch trình dự án 2024</h2>
+            <div class="table-wrapper">
+                <table class="table timeline-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Tên dự án</th>
+                            <th rowspan="2">Khách hàng</th>
+                            <th colspan="12">Timeline 2024</th>
+                        </tr>
+                        <tr>
+                            <th>T1</th><th>T2</th><th>T3</th>
+                            <th>T4</th><th>T5</th><th>T6</th>
+                            <th>T7</th><th>T8</th><th>T9</th>
+                            <th>T10</th><th>T11</th><th>T12</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CRM Transformation</td>
+                            <td>Ngân hàng BIDV</td>
+                            <td colspan="6" class="phase-planning">Phase 1</td>
+                            <td colspan="6" class="phase-development">Phase 2</td>
+                        </tr>
+                        <tr>
+                            <td>Cloud Migration</td>
+                            <td>FPT Retail</td>
+                            <td colspan="4" class="phase-research">Planning</td>
+                            <td colspan="8" class="phase-implementation">Implementation</td>
+                        </tr>
+                        <tr>
+                            <td>AI Analytics Platform</td>
+                            <td>Vinamilk</td>
+                            <td colspan="3" class="phase-planning">Research</td>
+                            <td colspan="5" class="phase-development">Development</td>
+                            <td colspan="4" class="phase-testing">Testing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Distribution Table -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Phân bố dự án theo khu vực</h2>
+            <div class="table-wrapper">
+                <table class="table region-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="3">Khu vực</th>
+                            <th colspan="9">Loại dự án</th>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Enterprise</th>
+                            <th colspan="3">SME</th>
+                            <th colspan="3">Startup</th>
+                        </tr>
+                        <tr>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                            <th>CRM</th>
+                            <th>Cloud</th>
+                            <th>AI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Miền Bắc</td>
+                            <td>25</td>
+                            <td>30</td>
+                            <td>15</td>
+                            <td>20</td>
+                            <td>25</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Miền Trung</td>
+                            <td>15</td>
+                            <td>20</td>
+                            <td>10</td>
+                            <td>15</td>
+                            <td>18</td>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Miền Nam</td>
+                            <td>30</td>
+                            <td>35</td>
+                            <td>20</td>
+                            <td>25</td>
+                            <td>28</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h5>VTI Việt Nam</h5>
+                    <p>Mang công nghệ Việt vươn ra quốc tế</p>
+                    <p class="contact-info">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Tầng 15, Tòa nhà ABC, Quận Cầu Giấy, Hà Nội</span>
+                    </p>
+                    <p class="contact-info">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>(024) 1234 5678</span>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="footer-links">
+                        <li><a href="/about.html">Về chúng tôi</a></li>
+                        <li><a href="/services.html">Dịch vụ</a></li>
+                        <li><a href="/projects.html">Dự án</a></li>
+                        <li><a href="/news.html">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="https://facebook.com/vti" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/vti" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://youtube.com/vti" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VTI Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

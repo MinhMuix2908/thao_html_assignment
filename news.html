@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VTI Việt Nam - Công nghệ số cho doanh nghiệp</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/assets/images/logo/favicon.ico">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        
+        <!-- Common CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+        
+        <!-- Page Specific CSS -->
+        <link rel="stylesheet" href="/css/news.css">
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/assets/images/logo/logo.png" alt="Logo VTI" height="30" class="d-inline-block align-text-top">
+                VTI Việt Nam
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news.html">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects.html">Dự án</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/service-detail.html">Dịch vụ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://tuyendung.vti.com.vn/?_gl=1*12mfeth*_gcl_au*MTAwNTI5NTI2MS4xNzMxMjQwODky*_ga*MTM2OTEwNDE4Ni4xNzMxMjQwODkx*_ga_LQPRTTM5TD*MTczMTI0NjA5NS4yLjEuMTczMTI0NjA5Ni41OS4wLjA.*_ga_QS5NL7CHN1*MTczMTI0NjA5NS4yLjEuMTczMTI0NjA5Ni4wLjAuMA..">Tuyển dụng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/vti.com.vn" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subscription Modal -->
+    <div class="modal fade" id="subscriptionModal" tabindex="-1" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center px-4 py-4">
+                    <i class="bi bi-check-circle-fill text-success display-1 mb-4"></i>
+                    <h4 class="modal-title mb-3" id="subscriptionModalLabel">Đăng ký thành công!</h4>
+                    <p class="text-muted mb-4">Cảm ơn bạn đã đăng ký nhận bản tin từ VTI. Chúng tôi sẽ gửi những thông tin mới nhất đến email của bạn.</p>
+                    <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Hero Section with Horizontal Banner -->
+    <section class="news-hero">
+        <div class="horizontal-banner">
+            <img src="/assets/images/banners/news-banner.jpg" alt="VTI News" class="w-100">
+            <div class="banner-content">
+                <div class="container">
+                    <h1 class="display-4 fw-bold">Tin tức & Sự kiện</h1>
+                    <p class="lead">Cập nhật thông tin mới nhất về công nghệ và hoạt động của VTI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- News Content -->
+<section class="py-5">
+    <div class="container">
+        <!-- Featured News Row -->
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="/assets/images/news/featured-1.jpg" class="img-fluid rounded-start h-100" alt="Featured News" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <span class="badge bg-primary">Công nghệ</span>
+                                    <small class="text-muted ms-2">10/11/2024</small>
+                                </div>
+                                <h3 class="card-title">VTI ra mắt giải pháp AI mới cho doanh nghiệp</h3>
+                                <p class="card-text">VTI vừa công bố giải pháp trí tuệ nhân tạo mới, giúp doanh nghiệp tối ưu hóa quy trình vận hành và tăng năng suất làm việc.</p>
+                                <a href="news-detail.html" class="btn btn-primary">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="/assets/images/news/featured-2.jpg" class="card-img-top" alt="News">
+                    <div class="card-body">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Doanh nghiệp</span>
+                            <small class="text-muted ms-2">09/11/2024</small>
+                        </div>
+                        <h4 class="card-title">VTI mở rộng thị trường Đông Nam Á</h4>
+                        <p class="card-text">Công ty tiếp tục mở rộng hoạt động tại thị trường Đông Nam Á với văn phòng mới tại Singapore.</p>
+                        <a href="news-detail.html" class="btn btn-outline-primary">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Categories -->
+        <div class="mb-5">
+            <h3 class="fw-bold mb-4">Tin tức công nghệ</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="/assets/images/news/tech-1.jpg" class="card-img-top" alt="Tech News">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Công nghệ</span>
+                                <small class="text-muted ms-2">10/11/2024</small>
+                            </div>
+                            <h5 class="card-title">Xu hướng AI trong năm 2024</h5>
+                            <p class="card-text">Khám phá những xu hướng AI mới nhất đang định hình tương lai công nghệ.</p>
+                            <a href="news-detail.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="/assets/images/news/tech-2.jpg" class="card-img-top" alt="Tech News">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-primary">Công nghệ</span>
+                                <small class="text-muted ms-2">09/11/2024</small>
+                            </div>
+                            <h5 class="card-title">Cloud Computing và bảo mật</h5>
+                            <p class="card-text">Giải pháp bảo mật mới cho doanh nghiệp trong thời đại điện toán đám mây.</p>
+                            <a href="news-detail.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company News -->
+        <div class="mb-5">
+            <h3 class="fw-bold mb-4">Tin tức doanh nghiệp</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="/assets/images/news/company-1.jpg" class="card-img-top" alt="Company News">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-success">Doanh nghiệp</span>
+                                <small class="text-muted ms-2">07/11/2024</small>
+                            </div>
+                            <h5 class="card-title">VTI đạt chứng nhận ISO 27001</h5>
+                            <p class="card-text">Chứng nhận quản lý an toàn thông tin theo tiêu chuẩn quốc tế.</p>
+                            <a href="news-detail.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div>
+            <h3 class="fw-bold mb-4">Sự kiện</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="/assets/images/news/event-1.jpg" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <div class="mb-2">
+                                <span class="badge bg-info">Sự kiện</span>
+                                <small class="text-muted ms-2">12/11/2024</small>
+                            </div>
+                            <h5 class="card-title">Workshop: Digital Transformation 2024</h5>
+                            <p class="card-text">Hội thảo chia sẻ kinh nghiệm chuyển đổi số cho doanh nghiệp.</p>
+                            <a href="news-detail.html" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold mb-4">Đăng ký nhận tin</h2>
+                    <p class="text-muted mb-4">Cập nhật thông tin mới nhất về công nghệ và hoạt động của VTI</p>
+                    <form id="newsletterForm" class="row g-3 justify-content-center needs-validation" novalidate>
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="newsletterEmail" placeholder="Nhập email của bạn" required>
+                                <button class="btn btn-primary" type="submit">Đăng ký</button>
+                            </div>
+                            <div class="invalid-feedback text-start">
+                                Vui lòng nhập email hợp lệ
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>VTI Việt Nam</h5>
+                    <p>Mang công nghệ Việt vươn ra quốc tế</p>
+                    <p class="mb-0">
+                        <i class="bi bi-geo-alt-fill me-2"></i>Tầng 15, Tòa nhà ABC, Quận Cầu Giấy, Hà Nội
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-telephone-fill me-2"></i>(024) 1234 5678
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Liên kết nhanh</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/about.html" class="text-white">Về chúng tôi</a></li>
+                        <li><a href="/pages/services.html" class="text-white">Dịch vụ</a></li>
+                        <li><a href="/news.html" class="text-white">Tin tức</a></li>
+                        <li><a href="/pages/register.html" class="text-white">Đăng ký tư vấn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kết nối với chúng tôi</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vti.com.vn" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/vtijsc" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 VTI Việt Nam. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* Projects Page Styles */
+
+/* Base Layout */
+body {
+    margin: 0;
+    padding-top: 60px; /* Height of fixed navbar */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary);
+    padding: 60px 0;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 15px;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat-item p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* Table Sections */
+.table-section {
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Table Styles */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
+.custom-table td {
+    vertical-align: middle;
+}
+
+/* Project Lists */
+.project-lists {
+    margin: 40px 0;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.card-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.numbered-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.numbered-list li {
+    padding: 15px 15px 15px 50px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.numbered-list li:last-child {
+    border-bottom: none;
+}
+
+.numbered-list li:before {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    left: 15px;
+    background: var(--primary);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.status-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.status-list li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.status-list li:last-child {
+    border-bottom: none;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-warning {
+    background-color: var(--warning);
+    color: #000;
+}
+
+.badge-info {
+    background-color: var(--info);
+    color: white;
+}
+
+/* Alternating Row Colors */
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover Effects */
+.custom-table tbody tr:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .table-wrapper {
+        margin: 0 -20px;
+        border-radius: 0;
+    }
+    
+    .custom-table {
+        font-size: 14px;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Background Colors for Table Cells */
+.bg-primary { background-color: var(--primary) !important; color: white; }
+.bg-success { background-color: var(--success) !important; color: white; }
+.bg-warning { background-color: var(--warning) !important; }
+.bg-info { background-color: var(--info) !important; color: white; }
+.bg-light { background-color: var(--light) !important; }
+
+/* Generic Spacing Utilities */
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-5 { margin-top: 3rem; }
+.py-5 { padding-top: 3rem; padding-bottom: 3rem; }
+
+:root {
+    /* Colors */
+    --primary: #0066cc;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+    
+    /* Spacing */
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 1rem;
+    --spacing-4: 1.5rem;
+    --spacing-5: 3rem;
+    
+    /* Border Radius */
+    --border-radius: 8px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+}
+
+/* Table Styles */
+.total-row {
+    background-color: rgba(var(--primary-rgb), 0.1);
+    font-weight: bold;
+}
+
+/* List Styles */
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status-badge.warning {
+    background-color: #ffc107;
+}
+
+.status-badge.info {
+    background-color: #0dcaf0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer [class^="col-"] {
+        margin-bottom: 30px;
+    }
+    
+    .footer-bottom {
+        margin-top: 20px;
+    }
+}
